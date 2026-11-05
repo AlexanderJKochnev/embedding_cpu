@@ -4,9 +4,9 @@
 
 services:
   embedder:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
+      # context: .
+      # dockerfile: Dockerfile
     container_name: embedder
     restart: unless-stopped
     environment:
