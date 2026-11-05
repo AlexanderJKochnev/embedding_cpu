@@ -1,0 +1,7 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+sentence-transformers>=3.0,<4.0
+transformers>=4.40,<5.0
+huggingface-hub>=0.23,<1.0
+safetensors>=0.4
+# torch ставится отдельным RUN выше
