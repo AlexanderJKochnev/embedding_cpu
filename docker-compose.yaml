@@ -10,7 +10,8 @@ services:
     container_name: embedder
     restart: unless-stopped
     environment:
-      LABSE_LOCAL_DIR: /app/models/LaBSE-ru-turbo
+      # LABSE_LOCAL_DIR: /app/models/LaBSE-ru-turbo
+      LABSE_LOCAL_DIR: /app/models/LaBSE-en-ru-coi
       LABSE_CPU_THREADS: "4"
       VECTOR_DTYPE: "float16"
     volumes:
