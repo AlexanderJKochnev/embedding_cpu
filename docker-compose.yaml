@@ -14,7 +14,7 @@ services:
       LABSE_CPU_THREADS: "4"
       VECTOR_DTYPE: "float16"
     volumes:
-      - ${BIND_VOLUMES}/vllm_node/models/LaBSE-ru-turbo:/model:ro
+      - ${BIND_VOLUMES}/vllm_node/models/LaBSE-ru-turbo:/app/models:ro
     networks:
       - vllm_network
     healthcheck:
@@ -29,3 +29,6 @@ networks:
     name: vllm_network
     driver: bridge
     external: true
+
+volumes:
+  model:
