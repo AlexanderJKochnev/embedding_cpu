@@ -5,7 +5,7 @@
 services:
   embedder:
     build:
-      context: ./embedder
+      context: .
       dockerfile: Dockerfile
     container_name: embedder
     restart: unless-stopped
