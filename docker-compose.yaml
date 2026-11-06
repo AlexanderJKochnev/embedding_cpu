@@ -11,8 +11,8 @@ services:
     restart: unless-stopped
     environment:
       # LABSE_LOCAL_DIR: /app/models/LaBSE-ru-turbo
-      LABSE_LOCAL_DIR: /app/models/LaBSE-en-ru-coi
-      # LABSE_LOCAL_DIR: /app/models/multilingual-e5-large
+      # LABSE_LOCAL_DIR: /app/models/LaBSE-en-ru-coi
+      LABSE_LOCAL_DIR: /app/models/multilingual-e5-large
       # LABSE_LOCAL_DIR: /app/models/ai-forever/ru-en-RoSBERTa
       LABSE_CPU_THREADS: "4"
       VECTOR_DTYPE: "float16"
